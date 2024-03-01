@@ -2,6 +2,7 @@ declare var global: any;
 
 const GetSessionName = async () => {
 
+    
     const response_sina_token = await fetch('http://185.126.8.108/NOMS-BE/api/Authentication/LoginAsync',{
         cache:'no-cache',
         method:'POST',
@@ -15,6 +16,7 @@ const GetSessionName = async () => {
     });
     const sinaToken = await response_sina_token.text();
     
+
     const response_crm_token = await fetch('http://185.126.8.108/NOMS-BE/API/NetExpert/GetCRMToken',{
         cache:'no-cache',
         method:'POST',
