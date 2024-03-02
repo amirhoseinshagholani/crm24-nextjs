@@ -90,7 +90,7 @@ const Login = async () => {
         </form>
       </div>
       <div>
-        <p className="text-slate-100 p-5">{global.sessionName}</p>
+        <p className="text-slate-100 p-5"></p>
       </div>
     </div>
   );
