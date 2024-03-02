@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import localFont from 'next/font/local';
+import localFont from "next/font/local";
 
 export const metadata: Metadata = {
   title: "netXpert",
@@ -8,8 +8,8 @@ export const metadata: Metadata = {
 };
 
 const vazirFont = localFont({
-  src:'../public/assets/fonts/Vazir-Regular.woff2'
-})
+  src: "../public/assets/fonts/Vazir-Regular.woff2",
+});
 
 export default function RootLayout({
   children,

@@ -48,14 +48,14 @@ const Login = async () => {
 
     const data_of_contact = await response_contact.json();
 
-    try{
+    // try{
       const contacts_melliCode = data_of_contact.result[0].cf_1123;
       if(contacts_melliCode == username){
         redirect('/panel');
       }
-    }catch{
-      redirect('/404')
-    }
+    // }catch{
+    //   redirect('/404')
+    // }
   };
 
   return (
